@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Estilos gerais */
+
+
+/* Estilos do grid */
+.loja-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 50px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.loja-item {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.loja-item:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.loja-item img {
+  max-width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  height: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.loja-item:hover img {
+  transform: scale(1.05);
+}
+
+.loja-item h3 {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.loja-item p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #999;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+  .loja-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loja-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.comprar-button {
+  margin-top: 10px;
+  border-radius: 50px;
+  background-color: #333;
+  padding: 8px 20px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.comprar-button:hover {
+  background-color: #222;
+  transform: translateY(-2px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}

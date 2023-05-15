@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Produtos</title>
+    <style>
+        #product-container {
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        #product-image {
+            width: 100%;
+        }
+        #product-name {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        #product-description {
+            margin-top: 20px;
+        }
+        #product-price {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="loadProduct('product1')">Produto 1</button>
+    <button onclick="loadProduct('product2')">Produto 2</button>
+    <div id="product-container">
+        <!-- O conteúdo do produto será carregado aqui -->
+    </div>
+
+    <script>
+    const products = {
+        'product1': {
+            name: 'Produto 1',
+            description: 'Esta é uma descrição para o Produto 1',
+            price: '99.99',
+            image: 'https://via.placeholder.com/150'
+        },
+        'product2': {
+            name: 'Produto 2',
+            description: 'Esta é uma descrição para o Produto 2',
+            price: '149.99',
+            image: 'https://via.placeholder.com/150'
+        }
+    }
+
+    function loadProduct(productId) {
+        const product = products[productId];
+        document.getElementById('product-container').innerHTML = `
+            <img id="product-image" src="${product.image}" alt="${product.name}">
+            <h1 id="product-name">${product.name}</h1>
+            <p id="product-description">${product.description}</p>
+            <p id="product-price">R$ ${product.price}</p>
+        `;
+    }
+    </script>
+</body>
+</html>

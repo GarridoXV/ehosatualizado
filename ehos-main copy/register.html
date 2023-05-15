@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<header>
+    
+    <nav><!-- nav-list-->
+        <a href="index.html" class="logo"> <img src="imagens/ehos.png" alt="" width= 200px  ></a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      
+      <ul class="nav-list">
+        <li class="dropdown">
+          <a href="#">Camisetas</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Camiseta 1</a></li>
+            <li><a href="#">Camiseta 2</a></li>
+            <li><a href="#">Camiseta 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Camisas</a></li>
+        <li class="dropdown">
+          <a href="#">Calças</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Calça 1</a></li>
+            <li><a href="#">Calça 2</a></li>
+            <li><a href="#">Calça 3</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Sapatos</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Sapato 1</a></li>
+            <li><a href="#">Sapato 2</a></li>
+            <li><a href="#">Sapato 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Promoções</a></li>
+        <li><a href="#">acessorios</a></li>
+        <li><a href="Login.html">Login/Registro</a></li>
+        
+          
+      </ul>
+      <a class="sacola"> <img src="imagens/icone-sacola.PNG" alt="" width= 40px  ></a>
+      
+    </ul>
+    
+    
+    </nav>
+  </header>
+  
+    <main class="main-container"  style="background-color: grey;" >
+        <section class="register-forms">
+            <div class="box">
+                <div class="img-box">
+                    <img src="imagens/ehos.png">
+                </div>
+                <div class="form-box">
+                    <h2>Criar Conta</h2>
+                    <p> Já é um membro? <a href="Login.html"> Login </a> </p>
+                    <form action="register.php" method="POST">
+                        <div class="input-group">
+                            <label for="nome"> Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required>
+                        </div>
+        
+                        <div class="input-group">
+                            <label for="email">E-mail</label>
+                            <input type
+                            <type="email" id="email" name="email" placeholder="Digite o seu email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="Digite o seu telefone" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco" name="endereco" placeholder="Digite o seu endereço" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="numero">Número da Casa</label>
+                            <input type="text" id="numero" name="numero" placeholder="Digite o número da casa" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" name="cep" placeholder="Digite o CEP" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="sexo">Sexo</label>
+                            <select id="sexo" name="sexo" required>
+                                <option value="homem">Homem</option>
+                                <option value="mulher">Mulher</option>
+                                <option value="prefiro-nao-responder">outros</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group w50">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                        </div>
+
+                        <div class="input-group w50">
+                            <label for="Confirmarsenha">Confirmar Senha</label>
+                            <input type="password" id="Confirmarsenha" name="Confirmarsenha" placeholder="Confirme a senha" required>
+                        </div>
+
+                        <div class="input-group">
+                            <button type="submit">Cadastrar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</main>
+
+</section>
+<footer class="footer-container">
+    <div class="footer-wrapper">
+      <div class="contact-info">
+        <a href="https://api.whatsapp.com/send/?phone=1733466101&text&app_absent=0" target="_blank">
+            <img src="imagens/whatsapp.png" alt="Contato">
+          </a>
+
+
+        <div class="contact-details">
+          <p>Entre em contato conosco:</p>
+          <p>Rua Francisco Inacio 433 CEP 14700-140</p>
+          <p>(17)1111-1111 </p>
+          <p>CNPJ: 12.345.678/0001-90</p>
+        </div>
+      </div>
+      <div class="card-logos">
+        <img src="imagens/bandeira amex png.png" alt="Cartões Aceitos" >
+        <img src="imagens/mastercard.png" alt="Cartões Aceitos" >
+        <p></p>
+        <img src="imagens/elo 1.png" alt="Cartões Aceitos" >
+        <img src="imagens/visa.png" alt="Cartões Aceitos">
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="javascript/script.js"></script>
+
+</html>

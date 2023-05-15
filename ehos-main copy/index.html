@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHOS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    
+</head>
+<header>
+    
+  <nav>
+      <a href="index.html" class="logo"> <img src="img/logo ehos png.png" alt="" width= 200px  ></a>
+    <div class="mobile-menu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    
+    <ul class="nav-list">
+      <li class="dropdown">
+        <a href="#">Camisetas</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Camiseta 1</a></li>
+          <li><a href="#">Camiseta 2</a></li>
+          <li><a href="#">Camiseta 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Camisas</a></li>
+      <li class="dropdown">
+        <a href="#">Calças</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Calça 1</a></li>
+          <li><a href="#">Calça 2</a></li>
+          <li><a href="#">Calça 3</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Sapatos</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Sapato 1</a></li>
+          <li><a href="#">Sapato 2</a></li>
+          <li><a href="#">Sapato 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Promoções</a></li>
+      <li><a href="#">acessorios</a></li>
+      <li><a href="Login.html">Login/Registro</a></li>
+      
+        
+    </ul>
+    <a class="sacola" id="sacola_qtnd" href="#">
+      <img src="img/sacolaicon.PNG" alt="" width="40px">
+      <span class="contador">0</span>
+  </a>
+  
+    
+    
+  </ul>
+  
+  
+  </nav>
+</header>
+  <main >
+    <section> <!-- slider-->
+    
+        <div class="slider">
+
+            <div class="slides">
+    
+              <input type='radio' name="radio-btn" id="radio1" >
+              <input type='radio' name="radio-btn" id="radio2" >
+              <input type='radio' name="radio-btn" id="radio3" >
+              <input type='radio' name="radio-btn" id="radio4" >
+    
+              <div class="slide first">
+                <img src="imagens/WhatsApp Image 2023-04-20 at 01.06.53.jpeg" alt="imagem1" >
+              </div>
+              <div class="slide">
+                <img src="imagens/WhatsApp Image 2023-04-20 at 01.06.54.jpeg" alt="imagem2">
+              </div>
+              <div class="slide">
+                <img src="imagens/WhatsApp Image 2023-04-20 at 01.06.55 (1).jpeg" alt="imagem3">
+              </div>
+              <div class="slide">
+                <img src="imagens/WhatsApp Image 2023-04-20 at 01.06.55.jpeg" alt="imagem4">
+              </div>
+              
+    </section>
+    
+      <!-- grid de roupas-->
+      <div class="loja-grid">
+        <div class="loja-item" data-id="1">
+          <img src="imagens/teste2.1.jpeg" onmouseover="trocarImagem(this, 'imagens/teste2.jpeg')" onmouseout="trocarImagem(this, 'imagens/teste1.jpeg')">
+          <h3>Camiseta Manga Comprida</h3>
+          <p>R$ 100,00</p>
+          <button class="comprar-button" onclick="adicionarItem('Camiseta Manga Comprida', 100.00, 'imagens/teste2.1.jpeg')">Adicionar na sacola</button>
+        </div>
+        <div class="loja-item" data-id="2">
+          <img src="imagens/teste1.jpeg">
+          <h3>Nome do produto</h3>
+          <p>R$ XX,XX</p>
+          <button class="comprar-button" onclick="adicionarItem('Nome do produto', 100.00, 'imagens/teste1.jpeg')">Adicionar na sacola</button>
+        </div>
+        <div class="loja-item" data-id="3">
+          <img src="imagens/teste3.jpeg">
+          <h3>Nome do produto</h3>
+          <p>R$ XX,XX</p>
+          <button class="comprar-button" onclick="adicionarItem('Nome do produto', 100.00, 'imagens/teste3.jpeg')">Adicionar na sacola</button>
+        </div>
+        <div class="loja-item" data-id="4">
+          <img src="imagens/teste4.jpeg">
+          <h3>Nome do produto</h3>
+          <p>R$ XX,XX</p>
+          <button class="comprar-button" onclick="adicionarItem('Nome do produto', 100.00, 'imagens/teste4.jpeg')">Adicionar na sacola</button>
+        </div>
+        <!-- adicione mais itens aqui -->
+      </div>
+      <section> 
+        <div class="pagination">
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">...</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="contact-info">
+          <a href="https://api.whatsapp.com/send/?phone=1733466101&text&app_absent=0" target="_blank">
+            <img src="img/whatsapp icon.png" alt="Contato">
+          </a>
+          <a href="https://www.facebook.com/yourpage" target="_blank">
+            <img src="img/facebook icon.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/yourpage" target="_blank">
+            <img src="img/instagram icon.png" alt="Instagram">
+          </a>
+          <a href="https://twitter.com/yourpage" target="_blank">
+            <img src="img/twitter icon.png" alt="Twitter">
+          </a>
+          <div class="contact-details">
+            <p>Entre em contato conosco:</p>
+            <p>Rua Francisco Inacio 433 CEP 14700-140</p>
+            <p>(17)1111-1111 </p>
+            <p>CNPJ: 12.345.678/0001-90</p>
+          </div>
+        </div>
+        <div class="card-logos">
+          <img src="img/bandeira amex png.png" alt="Cartões Aceitos" >
+          <img src="img/elo 1.png" alt="Cartões Aceitos" >
+          <img src="img/mastercard.png" alt="Cartões Aceitos" >
+          <img src="img/visa.png" alt="Cartões Aceitos">
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2023 Your Company Name. All rights reserved.</p>
+      </div>
+    </footer>
+    
+      
+  </main>
+  
+    
+  <script src="javascript/script.js"></script>
+ 
+
+</html>
